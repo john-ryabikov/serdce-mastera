@@ -1,0 +1,152 @@
+.section-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    @media only screen and (0 <= width <= 479px) {
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+    &__cont {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__prems {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 120px;
+        @media only screen and (0 <= width <= 479px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 60px;
+        }
+    }
+    &__prem {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+        width: 210px;
+    }
+    &__prem-icon {
+        position: relative;
+    }
+    &__prem-text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        text-align: center;
+    }
+    &__prem-text-1 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+    }
+    &__prem-text-2 {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 150%;
+        color: #696969;
+    }
+    &__h2 {
+        position: relative;
+        font-weight: 800;
+        font-size: 52px;
+        line-height: 125%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #303030;
+        width: 860px;
+        margin-bottom: 90px;
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+            font-size: 28px;
+        }
+    }
+    &__main-prems {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 160px;
+        margin-bottom: 100px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @media only screen and (0 <= width <= 479px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+    }  
+    &__main-prem {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 30px;
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 28px;
+        background-image: url("/img/Section-2/prem-fon.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 446px;
+        height: 376px;
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+            padding-top: 26px;
+        }
+    }
+    &__main-prem-icon {
+        position: relative;
+        width: 42px;
+    }
+    &__main-prem-text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+    &__main-prem-text-1 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 125%;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 18px;
+        }
+    }
+    &__main-prem-text-2 {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 150%;
+        color: #8d8d8d;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 12px;
+        }
+    }
+}

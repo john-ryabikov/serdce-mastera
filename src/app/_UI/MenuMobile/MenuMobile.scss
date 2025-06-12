@@ -1,0 +1,20 @@
+.menu-mobile {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    right: -305px;
+    width: 305px;
+    height: 100vh;
+    border-radius: 20px 0 0 20px;
+    padding-top: 100px;
+    background-color: #ffffff;
+    box-shadow: -8px 0px 8px -8px rgba(34, 60, 80, 0.2);
+    z-index: 99999;
+    transition: transform 0.4s;
+    &_active {
+        transform: translateX(-100%);
+    }
+}
