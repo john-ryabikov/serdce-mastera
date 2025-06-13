@@ -63,6 +63,8 @@
         @media only screen and (0 <= width <= 479px) {
             width: 320px;
             font-size: 16px;
+            width: 100%;
+            text-align: start;
         }
     }
     &__main-cont {
@@ -99,6 +101,7 @@
             padding-bottom: 40px;
             padding-left: 40px;
             border: 1px solid #222222;
+            gap: 30px;
         }
     }
     &__size {
