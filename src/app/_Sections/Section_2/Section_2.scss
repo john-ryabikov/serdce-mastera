@@ -11,7 +11,7 @@
         padding-top: 80px;
         padding-bottom: 90px;
     }
-    &__cont {
+    &__cont, &__extra-wrapper {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -96,8 +96,8 @@
             align-items: center;
             justify-content: flex-start;
             width: 100%;
-            gap: 10px;
-            margin-bottom: 20px;
+            gap: 50px;
+            margin-bottom: 50px;
         }
     }  
     &__main-prem {
@@ -110,14 +110,29 @@
         padding-top: 40px;
         padding-left: 40px;
         padding-right: 28px;
-        background-image: url("/img/Section-2/prem-fon.svg");
+        // background-image: url("/img/Section-2/prem-fon.svg");
         background-size: contain;
         background-repeat: no-repeat;
         width: 446px;
         height: 376px;
         @media only screen and (0 <= width <= 479px) {
-            width: 100%;
-            padding-top: 26px;
+            width: 340px;
+            height: 290px;
+            padding-top: 20px;
+            padding-left: 28px;
+            padding-right: 28px;
+            gap: 20px;
+        }
+    }
+    &__main-prem-fon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        @media only screen and (0 <= width <= 479px) {
+            width: auto;
         }
     }
     &__main-prem-icon {

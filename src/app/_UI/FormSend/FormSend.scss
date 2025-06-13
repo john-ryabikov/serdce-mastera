@@ -8,6 +8,9 @@
     padding: 40px;
     background-color: #ffffff;
     border-radius: 15px;
+    @media only screen and (0 <= width <= 479px) {
+        width: 100%;
+    }
     &__close-btn {
         position: absolute;
         right: -24px;
@@ -17,6 +20,10 @@
         &:hover {
             transform: scale(1.2, 1.2);
         }
+        @media only screen and (0 <= width <= 479px) {
+            right: 0;
+            top: -36px;
+        }
     }
     &__cap {
         font-weight: 800;
@@ -25,7 +32,10 @@
         text-transform: uppercase;
         text-align: center;
         color: #303030;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 28px;
+        }
     }
     &__label {
         position: relative;
@@ -67,6 +77,10 @@
         width: 360px;
         margin-top: 20px;
         margin-bottom: 20px;
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+            font-size: 14px;
+        }
     }
     &__button {
         position: relative;

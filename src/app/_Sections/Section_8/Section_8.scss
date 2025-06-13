@@ -7,6 +7,10 @@
     width: 100vw;
     padding-top: 120px;
     padding-bottom: 120px;
+    @media only screen and (0 <= width <= 479px) {
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
     &__cont {
         position: relative;
         display: flex;
@@ -24,6 +28,11 @@
         color: #303030;
         margin-bottom: 80px;
         width: 100%;
+        @media only screen and (0 <= width <= 479px) {
+            width: 85%;
+            font-size: 28px;
+            margin-bottom: 50px;
+        }
     }
     &__spoilers {
         position: relative;
@@ -33,6 +42,9 @@
         justify-content: flex-start;
         width: 1024px;
         gap: 40px;
+        @media only screen and (0 <= width <= 479px) {
+            width: 95%;
+        }
     }
     &__spoiler {
         position: relative;
@@ -43,6 +55,9 @@
         width: 100%;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         padding-bottom: 26px;
+        @media only screen and (0 <= width <= 479px) {
+            padding-bottom: 20px;
+        }
     }
     &__spoiler-q {
         position: relative;
@@ -56,11 +71,19 @@
             font-weight: 400;
             font-size: 24px;
             color: #000;
+            @media only screen and (0 <= width <= 479px) {
+                width: 260px;
+                font-size: 16px;
+                text-align: start;
+            }
         }
     }
     &__spoiler-icon {
         position: relative;
         transition: transform 0.3s;
+        @media only screen and (0 <= width <= 479px) {
+            width: 20px;
+        }
     }
     &__spoiler-collapse {
         position: relative;
@@ -76,6 +99,10 @@
         font-size: 16px;
         line-height: 150%;
         color: #8d8d8d;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 12px;
+            text-align: start;
+        }
     }
 }
 

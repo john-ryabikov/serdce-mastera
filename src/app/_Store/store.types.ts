@@ -9,3 +9,10 @@ export interface IMenu {
     openMenu: () => void,
     closeMenu: () => void
 }
+
+export interface IAlerts {
+    showAlertDone: boolean,
+    showAlertError: boolean,
+    toggleAlertDone: () => void,
+    toggleAlertError: () => void
+}

@@ -31,7 +31,7 @@ export default function Footer({ typedClass }: Props) {
           </p>
           <div className={`${typedClass}__left-links-author`}>
             <p>Разработка: <a className={`${typedClass}__left-link-author`} href="https://just-site.ru/" target="_blank" rel="nofollow">Just-site.ru</a></p>
-            <p>© 2025  Все права защищены.</p>
+            <p>© {new Date().getFullYear()} Все права защищены.</p>
           </div>
         </div>
       </Container>

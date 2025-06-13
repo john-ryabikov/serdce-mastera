@@ -1,7 +1,7 @@
 "use client"
 
 import { useForm } from 'react-hook-form';
-import { usePopups } from "@/app/_Store/store"
+import { useAlerts, usePopups } from "@/app/_Store/store"
 
 import axios from 'axios'
 
@@ -24,13 +24,13 @@ interface Props {
 export default function FormSend({ typedClass, isPopup}: Props) {
 
     const { closePopup } = usePopups()
+    const { toggleAlertError, toggleAlertDone } = useAlerts()
 
     const {register, handleSubmit, reset} = useForm<FormData>()
 
     const sendForm = (data: FormData) => {
         if (data.name === "" || data.phone === ""){
-            // toggleAlertErr()
-            alert("Введите свои данные!")
+            toggleAlertError()
             return
         }
         if (!/^[\s()+-]*([0-9][\s()+-]*){6,20}$/.test(data.phone)){
@@ -38,7 +38,7 @@ export default function FormSend({ typedClass, isPopup}: Props) {
             return
         }
         questionSubmit(data)
-        // toggleAlertDone()
+        toggleAlertDone()
     }
     
     const questionSubmit = (data: FormData) => {
@@ -60,8 +60,8 @@ export default function FormSend({ typedClass, isPopup}: Props) {
           chat_id: CHAT_ID,
           parse_mode: "html",
           text: message
-        })
-        .catch ((err) => alert(err))
+        }).catch ((err) => alert(err))
+        // console.log(message)
     }
 
     return (

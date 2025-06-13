@@ -5,10 +5,11 @@
     align-items: center;
     justify-content: flex-start;
     width: 100vw;
-    padding-top: 120px;
-    padding-bottom: 40px;
+    padding: 120px 40px 40px 40px;
     @media only screen and (0 <= width <= 479px) {
         padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
     &__fon {
         position: relative;
@@ -19,8 +20,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding: 80px;
         height: 100%;
         border-radius: 30px;
         @media only screen and (0 <= width <= 479px) {
@@ -61,7 +61,7 @@
             color: #dfdfdf;
         }
         @media only screen and (0 <= width <= 479px) {
-            width: 100%;
+            width: 320px;
             font-size: 16px;
         }
     }
@@ -89,14 +89,16 @@
         padding-left: 40px;
         gap: 21px;
         border-radius: 20px;
-        width: 524px;
+        width: 430px;
         backdrop-filter: blur(19.200000762939453px);
         background: linear-gradient(165deg, rgba(114, 122, 136, 0.2) 0%, rgba(14, 21, 30, 0.2) 58%, rgba(84, 83, 142, 0.2) 100%);
+        border: 1px solid #3f3f3f;
         @media only screen and (0 <= width <= 479px) {
             width: 100%;
             padding-top: 40px;
             padding-bottom: 40px;
-            padding-left: 26px;
+            padding-left: 40px;
+            border: 1px solid #222222;
         }
     }
     &__size {
@@ -112,12 +114,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 46px;
-        height: 46px;
-        margin-right: 40px;
-        @media only screen and (0 <= width <= 479px) {
-            margin-right: 24px;
-        }
+        width: 36px;
+        height: 36px;
+        margin-right: 24px;
     }
     &__size-text {
         position: relative;
@@ -129,7 +128,7 @@
     }
     &__size-text-1 {
         font-weight: 800;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 125%;
         color: #fff;
         @media only screen and (0 <= width <= 479px) {
@@ -138,20 +137,25 @@
     }
     &__size-text-2 {
         font-weight: 100;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 125%;
         color: #a8a8a8;
         @media only screen and (0 <= width <= 479px) {
-            font-size: 14px;
+            font-size: 12px;
         }
     }
     &__main-photo {
         position: absolute;
-        top: 0;
+        top: -30px;
         right: 0;
+        width: 680px;
         @media only screen and (0 <= width <= 479px) {
             position: relative;
+            top: 0;
             width: 100%;
+        }
+        @media only screen and (1200px <= width <= 1359px) {
+            width: 570px;
         }
     }
     &__btns {

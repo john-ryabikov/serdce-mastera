@@ -1,5 +1,5 @@
 import Container from "@/app/_UI/Container/Container";
-import FormSend from "./FormSend/FormSend";
+import FormSend from "../../_UI/FormSend/FormSend";
 import AnimatedSection from "@/app/_UI/AnimatedTags/AnimatedSection";
 
 import "./Section_9.scss"
