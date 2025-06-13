@@ -101,6 +101,10 @@
             justify-content: center;
             box-shadow: 0 4px 10px 0 rgba(255, 107, 0, 0.5);
             border-radius: 30px;
+            transition: all 0.4s;
+            &:active {
+                transform: scale(0.92, 0.92);
+            }
         }
     }
 }

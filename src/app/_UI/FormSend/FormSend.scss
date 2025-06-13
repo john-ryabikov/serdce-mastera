@@ -20,6 +20,9 @@
         &:hover {
             transform: scale(1.2, 1.2);
         }
+        &:active {
+            transform: scale(0.92, 0.92);
+        }
         @media only screen and (0 <= width <= 479px) {
             right: 0;
             top: -36px;

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
+
 import Script from "next/script";
 
 import "./globals.scss";
@@ -21,16 +22,17 @@ export const metadata: Metadata = {
     telephone: false,
   },
   verification: {
-    yandex: ''
+    yandex: '37ac2aa764e5807f'
   },
   icons: {
     icon: [
-      { url: '/favicon.png' }
+      { url: '/favicon.png' },
+      new URL('/favicon.png', 'https://vibrostol-plitka.ru'),
     ]
   },
   openGraph: {
     images: {
-      url: ""
+      url: "https://vibrostol-plitka.ru/img/Preview/preview_logo.jpg"
     }
   }
 };

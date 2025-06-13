@@ -195,6 +195,9 @@
         &:hover {
             background-color: rgba(204, 204, 204, 0.411);
         }
+        &:active {
+            transform: scale(0.92, 0.92);
+        }
         span {
             font-weight: 600;
             font-size: 14px;
