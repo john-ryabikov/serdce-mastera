@@ -14,15 +14,19 @@ export const metadata: Metadata = {
   title: "Купить вибростол для производства тротуарной плитки, гипса",
   description: "Вибсротолы КАРЕЛИЯ для производства плитки и брусчатки. Экономный станок для производства блоков и плитки своими руками. Осмотр и проверка до оплаты!",
   authors: [{ name: 'Just-Site.ru' }],
-  keywords: "",
+  keywords: "домашний вибростол, вибростол, вибростолы формы, плитка, станок",
   robots: "noyaca",
+  generator: 'Next.js',
+  formatDetection: {
+    telephone: false,
+  },
+  verification: {
+    yandex: ''
+  },
   icons: {
     icon: [
       { url: '/favicon.png' }
     ]
-  },
-  formatDetection: {
-    telephone: false,
   },
   openGraph: {
     images: {
