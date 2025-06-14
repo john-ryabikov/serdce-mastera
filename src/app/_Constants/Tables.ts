@@ -7,7 +7,7 @@ export const tables = [
         size: "62*62 см.",
         power: "300 Вт",
         loading: "до 100 кг",
-        price: "14 900 руб.",
+        price: "19 900 руб.",
     },
     {
         id: "Table-2",
@@ -17,6 +17,6 @@ export const tables = [
         size: "102*62 см.",
         power: "200 Вт",
         loading: "до 200 кг",
-        price: "17 900 руб.",
+        price: "22 900 руб.",
     }
 ]

@@ -15,7 +15,7 @@ export default function Section_1({ typedClass }: Props) {
       <Container typedClass={`${typedClass}__fon wrapper_large`}>
         <Container typedClass={`${typedClass}__cont wrapper`}>
           <h1 className={`${typedClass}__title-h1`}>ВИБРОСТОЛЫ КАРЕЛИЯ</h1>
-          <p className={`${typedClass}__main-price`}>от 14 990 руб.</p>
+          <p className={`${typedClass}__main-price`}>от 19 990 руб.</p>
           <p className={`${typedClass}__title-p`}>Производство плитки, брусчатки и облицовочного камня своими руками. Осмотр и проверка <b>до оплаты!</b></p>
           <div className={`${typedClass}__main-cont`}>
             <div className={`${typedClass}__sizes`}>
