@@ -101,7 +101,7 @@ export default function FormSend({ typedClass, isPopup}: Props) {
                     <span>Отправить заявку</span>
                 </button>
                 <p className={`${typedClass}__rules`}>
-                    *Оставляя заявку, Вы соглашаетесь с условиями <a href="/">обработки персональных данных </a>      
+                    *Оставляя заявку, Вы соглашаетесь с условиями <a href="https://сердце-мастера.рф/include/licenses_detail.php" target="_blank" rel="nofollow">обработки персональных данных </a>      
                 </p>
             </form>
         </>

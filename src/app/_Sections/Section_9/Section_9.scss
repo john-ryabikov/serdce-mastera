@@ -7,7 +7,7 @@
     width: 100vw;
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: rgba(227, 170, 94, 0.1);
+    background: linear-gradient(135deg, rgba(227, 170, 94, 0.1) 0%, rgba(255, 0, 0, 0.1) 100%);
     @media only screen and (0 <= width <= 479px) {
         padding-top: 80px;
         padding-bottom: 200px;

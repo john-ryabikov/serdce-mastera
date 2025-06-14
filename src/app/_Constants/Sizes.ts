@@ -2,8 +2,8 @@ export const sizes = [
     {
       id: "Size-1",
       icon: "/img/Icons/linage_icon.svg",
-      cap: "РАЗМЕР БЛОКА",
-      text: "390*190*188 мм. ГОСТ"
+      cap: "РАЗМЕР СТОЛА",
+      text: "102*62см. или 62*62см."
     },
     {
       id: "Size-2",
@@ -27,6 +27,6 @@ export const sizes = [
       id: "Size-5",
       icon: "/img/Icons/guard_icon.svg",
       cap: "ГАРАНТИЯ",
-      text: "5 лет"
+      text: "3 года"
     }
   ]

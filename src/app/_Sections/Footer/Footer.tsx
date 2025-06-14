@@ -13,9 +13,8 @@ export default function Footer({ typedClass }: Props) {
     <footer className={`${typedClass}`}>
       <Container typedClass={`${typedClass}__cont wrapper_large`}>
         <p className={`${typedClass}__rules-links`}>
-          <a className={`${typedClass}__rules-link`} href="" target="_blank">Политика в отношении обработки персональных данных</a>
-          <a className={`${typedClass}__rules-link`} href="" target="_blank">Договор оказания услуг по организации мероприятий</a>
-          <a className={`${typedClass}__rules-link`} href="" target="_blank">Согласие на обработку персональных данных</a>
+          <a className={`${typedClass}__rules-link`} href="https://сердце-мастера.рф/include/offer_detail.php" target="_blank" rel="nofollow">Политика в отношении обработки персональных данных</a>
+          <a className={`${typedClass}__rules-link`} href="https://сердце-мастера.рф/include/licenses_detail.php" target="_blank" rel="nofollow">Согласие на обработку персональных данных</a>
         </p>
         <p className={`${typedClass}__info`}>
           <span>ИНН: 773395015820</span>
@@ -24,7 +23,7 @@ export default function Footer({ typedClass }: Props) {
         <div className={`${typedClass}__left-links`}>
           <p className={`${typedClass}__left-links-socials`}>
             {socials.map((social) => (
-              <a className={`${typedClass}__left-link-socials`} key={social.id} href={social.href} target="_blank">
+              <a className={`${typedClass}__left-link-socials`} key={social.id} href={social.href} target="_blank" rel="nofollow">
                 <img src={social.icon} alt={social.id} />
               </a>
             ))}

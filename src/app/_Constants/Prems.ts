@@ -8,7 +8,7 @@ export const prems = [
     {
       id: "Prem-2",
       icon: "/img/Icons/sale_icon.svg",
-      cap: "Скидка 500 руб.",
+      cap: "Скидка 2000 руб.",
       text: "Получаете при покупке второго станка."
     },
     {
@@ -27,6 +27,6 @@ export const prems = [
       id: "Prem-5",
       icon: "/img/Icons/delivery_icon.svg",
       cap: "Доставим за 1-5 дней!",
-      text: "Проверка станка до оплаты!"
+      text: "Проверка стола до оплаты!"
     }
   ]

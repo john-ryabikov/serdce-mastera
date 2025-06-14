@@ -14,7 +14,7 @@ export default function Section_6({ typedClass }: Props) {
   return (
     <AnimatedSection typedClass={typedClass}>
       <Container typedClass={`${typedClass}__cont wrapper`}>
-        <h4 className={`${typedClass}__h4`}>Вибростолы карелия для вашего производства</h4>
+        <h4 className={`${typedClass}__h4`}>Сопутствующие товары для вибростолов</h4>
         <div className={`${typedClass}__extra-items`}>
           <div className={`${typedClass}__extra-items-wrapper`}>
             <div className={`${typedClass}__extra-items-row`}>

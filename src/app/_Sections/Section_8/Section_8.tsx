@@ -14,7 +14,7 @@ export default function Section_8({ typedClass }: Props) {
   return (
     <AnimatedSection typedClass={typedClass} id="faq">
       <Container typedClass={`${typedClass}__cont wrapper`}>
-        <h5 className={`${typedClass}__h5`}>Помощь и консультация: FAQ-раздел</h5>
+        <h5 className={`${typedClass}__h5`}>Частые вопросы</h5>
         <div className={`${typedClass}__spoilers`}>
           {spoilers.map((spoiler, i) => (
             <Spoiler key={spoiler.id} typedClass={typedClass} spoiler={spoiler} number={i}/>
