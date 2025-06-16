@@ -4,6 +4,7 @@ import { Manrope } from "next/font/google";
 import Script from "next/script";
 
 import "./globals.scss";
+import YandexMetrika from "./_Metrika/YandexMetrica";
 
 const manrope = Manrope({ 
   subsets: ["cyrillic", "latin"],
@@ -44,8 +45,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`${manrope.variable}`}>{children}</body>
-      <Script src="js/configs.js"/>
+      <body className={`${manrope.variable}`}>
+        <YandexMetrika id={102673454}/>
+        {children}
+        <Script src="js/configs.js"/>
+      </body>
     </html>
   );
 }
