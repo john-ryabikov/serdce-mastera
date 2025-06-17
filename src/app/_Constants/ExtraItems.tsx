@@ -32,7 +32,7 @@ export const extra_items = [
         {
         id: "Extra-6",
         src: "/img/Section-6/6_6.png",
-        name: <span>Платификатор</span>,
+        name: <span>Пластификатор</span>,
         price: "600 руб."
     },
         {

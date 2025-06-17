@@ -6,6 +6,7 @@ import Popup from "@/app/_Sections/Popup/Popup"
 import AnimatedMain from "../AnimatedTags/AnimatedMain"
 import MenuMobile from "../MenuMobile/MenuMobile"
 import Alerts from "../Alerts/Alerts"
+import PhoneButton from "../PhoneButton/PhoneButton"
 
 export default function MainContainer({ children }: Readonly<{children: React.ReactNode}>){
 
@@ -17,6 +18,7 @@ export default function MainContainer({ children }: Readonly<{children: React.Re
             {showPopup && <Popup/>}
             <MenuMobile typedClass="menu-mobile"/>
             {children}
+            <PhoneButton/>
         </AnimatedMain>
     )
 }

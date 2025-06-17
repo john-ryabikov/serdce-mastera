@@ -2,7 +2,7 @@ export const products = [
     {
       id: "Product-1",
       photo: "/img/Section-3/3_1.png",
-      name: "Исскуственный камень"
+      name: "Искусственный камень"
     },
     {
       id: "Product-2",
