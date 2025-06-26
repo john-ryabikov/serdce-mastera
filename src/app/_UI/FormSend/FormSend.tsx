@@ -52,16 +52,16 @@ export default function FormSend({ typedClass, isPopup}: Props) {
     }
 
     const sendMessage = (message_tg: string[]) => {
-        let message = ""
-        for (let text_tg of message_tg) {
-          message += text_tg
-        }  
-        axios.post(URI_API, {
-          chat_id: CHAT_ID,
-          parse_mode: "html",
-          text: message
-        }).catch ((err) => alert(err))
-        // console.log(message)
+    //     let message = ""
+    //     for (let text_tg of message_tg) {
+    //       message += text_tg
+    //     }  
+    //     axios.post(URI_API, {
+    //       chat_id: CHAT_ID,
+    //       parse_mode: "html",
+    //       text: message
+    //     }).catch ((err) => alert(err))
+        console.log(message)
     }
 
     return (
