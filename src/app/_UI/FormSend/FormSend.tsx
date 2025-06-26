@@ -52,10 +52,10 @@ export default function FormSend({ typedClass, isPopup}: Props) {
     }
 
     const sendMessage = (message_tg: string[]) => {
-    //     let message = ""
-    //     for (let text_tg of message_tg) {
-    //       message += text_tg
-    //     }  
+        let message = ""
+        for (let text_tg of message_tg) {
+          message += text_tg
+        }  
     //     axios.post(URI_API, {
     //       chat_id: CHAT_ID,
     //       parse_mode: "html",
