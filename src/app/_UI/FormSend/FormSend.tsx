@@ -33,8 +33,8 @@ export default function FormSend({ typedClass, isPopup}: Props) {
             toggleAlertError()
             return
         }
-        if (!/^[\s()+-]*([0-9][\s()+-]*){6,20}$/.test(data.phone)){
-            alert("Неверный номер телефона!")
+        if (!/^(\+79)[0-9]{9}$/.test(data.phone)){
+            toggleAlertErrorPhone()
             return
         }
         questionSubmit(data)
