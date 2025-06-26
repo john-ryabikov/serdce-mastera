@@ -33,8 +33,8 @@ export default function FormSend({ typedClass, isPopup}: Props) {
             toggleAlertError()
             return
         }
-        if (!/^(\+79)[0-9]{9}$/.test(data.phone)){
-            toggleAlertErrorPhone()
+        if (!/^[\s()+-]*([0-9][\s()+-]*){6,20}$/.test(data.phone)){
+            alert("Неверный номер телефона!")
             return
         }
         questionSubmit(data)
@@ -56,12 +56,12 @@ export default function FormSend({ typedClass, isPopup}: Props) {
         for (let text_tg of message_tg) {
           message += text_tg
         }  
-        axios.post(URI_API, {
-          chat_id: CHAT_ID,
-          parse_mode: "html",
-          text: message
-        }).catch ((err) => alert(err))
-        // console.log(message)
+    //     axios.post(URI_API, {
+    //       chat_id: CHAT_ID,
+    //       parse_mode: "html",
+    //       text: message
+    //     }).catch ((err) => alert(err))
+        console.log(message)
     }
 
     return (
