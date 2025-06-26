@@ -33,7 +33,7 @@ export default function FormSend({ typedClass, isPopup}: Props) {
             toggleAlertError()
             return
         }
-        if (!/^(\+7|8)[0-9]{10}$/.test(data.phone)){
+        if (!/^(\+79)[0-9]{9}$/.test(data.phone)){
             alert("Номер телефона невалиден!")
             return
         }
@@ -87,7 +87,7 @@ export default function FormSend({ typedClass, isPopup}: Props) {
                     <input
                         className={`${typedClass}__input`} 
                         type="tel"
-                        placeholder="+79991234567"  
+                        placeholder="+79123456789"  
                         {...register('phone')}  
                     />
                 </label>
