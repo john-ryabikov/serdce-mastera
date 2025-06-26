@@ -17,7 +17,7 @@ export default function Section_9({ typedClass }: Props) {
             <p className={`${typedClass}__text-info`}>Укажите Ваши контактные данные, и наш менеджер свяжется с вами для уточнения деталей. Консультация бесплатна!</p>
             <p className={`${typedClass}__contacts`}>
               <span>Подробную информацию мы всегда готовы предоставить по телефону:</span><br/>
-              <b>8 (800) 444-70-28</b>
+              <b>+7 (925) 369-90-91</b>
             </p>
           </div>
           <FormSend typedClass="form-send" isPopup={false}/>

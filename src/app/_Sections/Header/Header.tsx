@@ -16,7 +16,7 @@ export default function Header({ typedClass }: Props) {
       <Container typedClass={`${typedClass}__cont wrapper_large`}>
         <div className={`${typedClass}__nav`}>
           <a className={`${typedClass}__nav-logo`} href="#main">
-            <img src="/img/Icons/logo.png" alt="Сердце Мастера" />
+            <img src="/img/Icons/logo.svg" alt="Сердце Мастера" />
           </a>
           <nav className={`${typedClass}__nav-links`}>
             {navbar.map((link) => (
@@ -27,7 +27,7 @@ export default function Header({ typedClass }: Props) {
         <div className={`${typedClass}__phone`}>
           <p className={`${typedClass}__phone-text`}>
             <span className={`${typedClass}__phone-text-cap`}>Звонок по России бесплатный</span>
-            <span className={`${typedClass}__phone-text-num`}>8 (800) 444-70-28</span>
+            <span className={`${typedClass}__phone-text-num`}>+7 (925) 369-90-91</span>
           </p>
           <ButtonPopup typedClass="button-popup" icon="/img/Icons/call_icon.svg" cont="Заказать звонок"/>
         </div>

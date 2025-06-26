@@ -26,7 +26,7 @@ export default function MenuMobile({ typedClass }: Props) {
             <div className={`${typedClass}__phone`}>
                 <p className={`${typedClass}__phone-text`}>
                 <span className={`${typedClass}__phone-text-cap`}>Звонок по России бесплатный</span>
-                <span className={`${typedClass}__phone-text-num`}>8 (800) 444-70-28</span>
+                <span className={`${typedClass}__phone-text-num`}>+7 (925) 369-90-91</span>
                 </p>
                 <ButtonPopup typedClass="button-popup" icon="/img/Icons/call_icon.svg" cont="Заказать звонок"/>
             </div>

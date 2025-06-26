@@ -52,7 +52,8 @@ ym(${id}, "init", {
         clickmap:true,
         trackLinks:true,
         accurateTrackBounce:true,
-        webvisor:true
+        webvisor:true,
+        ecommerce:"dataLayer"
    });`}    
       </Script>
       <noscript>

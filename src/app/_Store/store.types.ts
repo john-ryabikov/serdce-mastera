@@ -13,6 +13,8 @@ export interface IMenu {
 export interface IAlerts {
     showAlertDone: boolean,
     showAlertError: boolean,
+    showAlertErrorPhone: boolean,
     toggleAlertDone: () => void,
-    toggleAlertError: () => void
+    toggleAlertError: () => void,
+    toggleAlertErrorPhone: () => void
 }

@@ -17,7 +17,7 @@ export default function PhoneButton() {
             className="phone-call-btn__cont"
             animate={{scale: [1.0, 1.15, 1.0]}}
             transition={{ delay: 6, duration: 1.5, repeat: Infinity}}
-            href="tel:"
+            href="tel:+79253699091"
             target="_blank"
         >
             <img src="/img/Icons/call_icon.svg" alt="Позвонить" />

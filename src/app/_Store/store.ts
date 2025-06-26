@@ -16,6 +16,7 @@ export const useMenu = create<IMenu>(set => ({
 export const useAlerts = create<IAlerts>(set => ({
     showAlertDone: false,
     showAlertError: false,
+    showAlertErrorPhone: false,
     toggleAlertDone: () => {
         set((state) => ({showAlertDone: !state.showAlertDone}))
         setTimeout(() => {
@@ -26,6 +27,12 @@ export const useAlerts = create<IAlerts>(set => ({
         set((state) => ({showAlertError: !state.showAlertError}))
         setTimeout(() => {
             set((state) => ({showAlertError: !state.showAlertError}))
+        }, 2500)
+    },
+    toggleAlertErrorPhone: () => {
+        set((state) => ({showAlertErrorPhone: !state.showAlertErrorPhone}))
+        setTimeout(() => {
+            set((state) => ({showAlertErrorPhone: !state.showAlertErrorPhone}))
         }, 2500)
     }
 }))

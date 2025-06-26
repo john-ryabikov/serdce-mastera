@@ -24,7 +24,7 @@ interface Props {
 export default function FormSend({ typedClass, isPopup}: Props) {
 
     const { closePopup } = usePopups()
-    const { toggleAlertError, toggleAlertDone } = useAlerts()
+    const { toggleAlertError, toggleAlertDone, toggleAlertErrorPhone } = useAlerts()
 
     const {register, handleSubmit, reset} = useForm<FormData>()
 
@@ -33,8 +33,8 @@ export default function FormSend({ typedClass, isPopup}: Props) {
             toggleAlertError()
             return
         }
-        if (!/^[\s()+-]*([0-9][\s()+-]*){6,20}$/.test(data.phone)){
-            alert("Неверный номер телефона!")
+        if (!/^(\+79)[0-9]{9}$/.test(data.phone)){
+            toggleAlertErrorPhone()
             return
         }
         questionSubmit(data)
@@ -44,8 +44,8 @@ export default function FormSend({ typedClass, isPopup}: Props) {
     const questionSubmit = (data: FormData) => {
         const message_tg = [
             `<b>Заявка для созвона</b>\n`,
-            `<b>Имя: ${data.name}</b>\n`,
-            `<b>Номер: ${data.phone}</b>\n`
+            `<b>Имя:</b> ${data.name}\n`,
+            `<b>Номер:</b> ${data.phone}\n`
         ]
         sendMessage(message_tg)
         reset()
@@ -74,7 +74,7 @@ export default function FormSend({ typedClass, isPopup}: Props) {
                 )}
                 {isPopup && (<p className={`${typedClass}__cap`}>Отправьте заявку</p>)}
                 <label className={`${typedClass}__label`}>
-                    <span>Ваше имя</span>
+                    <span className={`${typedClass}__input-title`}>Ваше имя</span>
                     <input
                         className={`${typedClass}__input`} 
                         type="text"
@@ -83,13 +83,14 @@ export default function FormSend({ typedClass, isPopup}: Props) {
                     />
                 </label>
                 <label className={`${typedClass}__label`}>
-                    <span>Телефон</span>
-                    <input
+                    <span className={`${typedClass}__input-title`}>Телефон</span>
+                    <input 
                         className={`${typedClass}__input`} 
                         type="tel"
-                        placeholder="+7-(999)-123-45-67"  
+                        placeholder="+79123456789"  
                         {...register('phone')}  
                     />
+                    <span className={`${typedClass}__input-hint`}>(Используйте формат, указаный в поле ввода)</span>
                 </label>
                 {isPopup && ( 
                     <p className={`${typedClass}__under-text`}>

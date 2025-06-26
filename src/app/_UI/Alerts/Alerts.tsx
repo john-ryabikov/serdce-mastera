@@ -4,7 +4,7 @@ import "./Alerts.scss"
 
 export default function Alerts() {
 
-    const { showAlertDone, showAlertError } = useAlerts();
+    const { showAlertDone, showAlertError, showAlertErrorPhone } = useAlerts();
 
     const alerts = [
         {
@@ -18,6 +18,12 @@ export default function Alerts() {
             showAlert: showAlertError,
             icon: "img/Icons/warning_icon.svg",
             text: "Не все данные введены!"
+        },
+        {
+            id: "Alert-err-tel",
+            showAlert: showAlertErrorPhone,
+            icon: "img/Icons/warning_icon.svg",
+            text: "Номер телефона невалиден!"
         },
     ]
 
